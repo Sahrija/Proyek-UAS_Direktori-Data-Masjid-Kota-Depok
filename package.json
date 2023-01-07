@@ -1,0 +1,30 @@
+{
+  "name": "proyek-uas_direktori-data-masjid-kota-depok",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sahrija/Proyek-UAS_Direktori-Data-Masjid-Kota-Depok.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sahrija/Proyek-UAS_Direktori-Data-Masjid-Kota-Depok/issues"
+  },
+  "homepage": "https://github.com/Sahrija/Proyek-UAS_Direktori-Data-Masjid-Kota-Depok#readme",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "express.js": "^1.0.0",
+    "knex": "^2.4.0",
+    "nodemon": "^2.0.20",
+    "pg": "^8.8.0"
+  }
+}
+}
