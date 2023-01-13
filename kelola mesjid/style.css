@@ -1,0 +1,355 @@
+:root {
+    --main-bg: aliceblue;
+    --item-color: white;
+    --soft-pink: violet;
+    --hard-pink: palevioletred;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    /* outline: 1px #695acd2e solid; */
+}
+
+body {
+    background-color: var(--main-bg);
+    font-family: Arial, Helvetica, sans-serif;
+    height: fit-content;
+    min-height: 100vh;
+    min-width: fit-content;
+    position: inherit;
+    width: auto;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container {
+    display: flex;
+}
+
+/* navbar start */
+.navbar {
+    border-right: solid white;
+    color: gray;
+    width: 200px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar>* {
+    background-color: white;
+    margin: 10px 10px 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* navbar brand start */
+.brand .pink {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--hard-pink);
+}
+
+.brand .purple {
+    font-size: 20px;
+    font-weight: bold;
+    color: darkorchid;
+}
+
+
+/* navbar img and icon */
+
+.close {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    background-color: red;
+}
+
+/* navbar brand end */
+
+/* 
+.line {
+    background-color: black;
+    height: 2px;
+    margin: unset;
+} */
+
+.brand,
+.account {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul {
+    border-radius: 5px;
+    list-style: none;
+}
+
+/* 
+.navbar ul li span {
+    border: #fff 2px solid;
+    display: inline-block;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+} */
+
+.navbar ul a.active {
+    background-color: lavender;
+    border-radius: 10px;
+    color: darkorchid;
+}
+
+.navbar ul a:hover {
+    background-color: var(--main-bg);
+    position: relative;
+    right: -10px;
+    top: 0;
+    transition: 0.5s ease;
+}
+
+.navmenu a {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+    right: 0;
+    top: 0;
+    transition: 0.5s ease;
+}
+
+.navmenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 65vh;
+    max-height: fit-content;
+}
+
+.navmenu h3 {
+    font-size: medium;
+    font-weight: normal;
+    margin-left: 10px;
+}
+
+.logout {
+    border-top: var(--main-bg) solid;
+    margin-top: 50px;
+}
+
+
+.navbar .icon {
+    width: 25px;
+    border-radius: 50%;
+}
+
+/* navbar end */
+
+
+
+input {
+    width: 100%;
+    box-sizing: border-box;
+    height: 30px;
+    border-radius: 5px;
+    border: solid 2px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* main start---------------------- */
+main {
+    margin: 20px;
+    width: 100%;
+    height: fit-content;
+    box-sizing: border-box;
+}
+
+/* card start------------------ */
+.card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px -20px slateblue;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.card>* {
+    margin-bottom: 10px;
+}
+
+.card-title {}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* card end--------------- */
+
+/* breadcrumb start ------*/
+
+.breadcrumb ul {
+    display: flex;
+    rotate: 180deg;
+}
+
+.breadcrumb ul li {
+    list-style: none;
+    display: flex;
+    filter: drop-shadow(0 0 1px 10px black);
+
+}
+
+.breadcrumb ul li a {
+    padding: 5px 20px 5px 10px;
+    margin-left: -10px;
+    display: flex;
+    align-items: center;
+    color: blue;
+    background-color: red;
+    position: relative;
+    clip-path: polygon(10px 0, 100% 0, 100% 100%, 10px 100%, 0px 50%);
+    box-shadow: 0 0 10px black;
+}
+
+.breadcrumb ul li a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb ul li div {
+    rotate: 180deg;
+}
+
+
+.breadcrumb .home {
+    background-color: white;
+    color: var(--hard-pink);
+}
+
+.breadcrumb .admin {
+    background-color: var(--soft-pink);
+    color: white;
+}
+
+.breadcrumb .kelola {
+    background-color: var(--hard-pink);
+    color: white;
+}
+
+/* breadcrumb end------- */
+
+
+/* table start */
+table {
+    border: 0;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th {
+    border-bottom: lightblue solid;
+    margin: 3px;
+    height: 40px;
+}
+
+td {
+    height: 40px;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: aliceblue;
+}
+
+/* table end */
+
+
+
+
+/* main end------------------------ */
+
+/* footer start */
+footer {
+    padding: 8px;
+    height: auto;
+    display: flex;
+    color: white;
+    background-color: var(--soft-pink);
+}
+
+footer p {
+    margin: 0;
+    padding-left: 10px;
+}
+
+
+button {
+    width: fit-content;
+    padding: 5px;
+    background-color: lightgreen;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+button:hover {
+    text-decoration: underline;
+
+}
+
+button:focus-visible {
+    background-color: black;
+}
+
+.delete {
+    background-color: orangered;
+    border-color: transparent;
+}
+
+/* footer end */
+
+/* ========================= MEDIA QUERIES ============================ */
+
+/* tablet */
+@media screen and (max-width: 1200px) {
+    body {
+    }
+
+    .navbar.colapse h3,
+    .navbar.colapse span {
+        transition: 0.5s ease;
+        opacity: 0;
+    }
+
+    .navbar.colapse {
+        width: 100px;
+        transition: 0.5s ease;
+    }
+
+    .navbar.colapse:hover {
+        width: 200px;
+        transition: 0.5s ease;
+    }
+
+    .navbar.colapse:hover h3,
+    .navbar.colapse:hover span {
+        display: inline;
+        transition: 0.5s ease;
+        opacity: 1;
+    }
+
+    th:hover{
+        opacity: 0;
+        transition: 0.5s;
+    }
+}
