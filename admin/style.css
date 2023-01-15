@@ -1,0 +1,21 @@
+.logout {
+    margin-top: auto;
+}
+
+.nav-sidebar {
+    height: 60vh;
+}
+
+.table .card-tools {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+}
+
+.tambah {
+    width: fit-content;
+    display: flex;
+}
+.tambah button{
+    border-style: dashed;
+}
