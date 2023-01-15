@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Login Sistem Direktori Data Mesjid</title>
+  <title>Login</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -21,16 +21,16 @@
 <body class="hold-transition login-page">
 <div class="login-box">
   <div class="login-logo">
-    <a href="index.html"><b>Login Sistem Direktori Data Mesjid</b></a>
+    <a href="index2.html"><b>LOGIN SISTEM DIREKTORI MESJID</b></a>
   </div>
   <!-- /.login-logo -->
   <div class="card">
     <div class="card-body login-card-body">
-      <p class="login-box-msg"></p>
+      <p class="login-box-msg">Masukkan data untuk login ke dalam website</p>
 
-      <form action="index.html" method="post">
+      <form action="index3.html" method="post">
         <div class="input-group mb-3">
-          <input type="text" class="form-control" placeholder="Username">
+          <input type="username" class="form-control" placeholder="Username">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-envelope"></span>
@@ -48,8 +48,8 @@
         <div class="row">
           <div class="col-8">
             <div class="icheck-primary">
-              <input type="checkbox" id="remember">
-              <label for="remember">
+              <input type="checkbox" id="ingat">
+              <label for="ingat">
                 Ingat saya
               </label>
             </div>
@@ -61,18 +61,35 @@
           <!-- /.col -->
         </div>
       </form>
+      
+      <!-- /.social-auth-links -->
 
-    <!-- /.login-card-body -->
   </div>
 </div>
 <!-- /.login-box -->
 
 <!-- jQuery -->
-<script src="../../plugins/jquery/jquery.min.js"></script>
+<script src="plugins/jquery/jquery.min.js"></script>
 <!-- Bootstrap 4 -->
-<script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- AdminLTE App -->
-<script src="../../dist/js/adminlte.min.js"></script>
-<script src="js/form.js"></script>
+<script src="dist/js/adminlte.min.js"></script>
+
+<script>
+  function login() {
+    event.preventDefault();
+
+    let uname = document.getElementById("username").value;
+    let pass = document.getElementById("password").value;
+
+    if (uname == "admin" && pass == "admin") {
+        location.replace("");
+        alert("Login berhasil");
+    } else {
+        alert("Login gagal")
+    }
+}
+</script>
+
 </body>
 </html>
