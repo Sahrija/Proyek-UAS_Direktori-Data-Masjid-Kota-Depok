@@ -1,3 +1,21 @@
+:root {
+    --primary: #6D9886;
+    --secondary: #F7F7F7;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-width: 2px;
+}
+
+/* preloader */
+
+.preloader.flex-column.justify-content-center.align-items-center {
+    background-color: rgb(78, 153, 251);
+}
+
+/* aside navbar */
 .logout {
     margin-top: auto;
 }
@@ -6,16 +24,115 @@
     height: 60vh;
 }
 
+.nav.nav-pills.flex-column {
+    flex-wrap: nowrap;
+}
+
+.os-viewport os-viewport-native-scrollbars-invisible os-viewport-native-scrollbars-overlaid {
+    flex-wrap: nowrap;
+}
+
+.sidebar-dark-primary .nav-sidebar>.nav-item>.nav-link.active,
+.sidebar-light-primary .nav-sidebar>.nav-item>.nav-link.active {
+    background-color: var(--primary);
+}
+
+[class*=sidebar-dark-] .nav-treeview>.nav-item>.nav-link.active,
+[class*=sidebar-dark-] .nav-treeview>.nav-item>.nav-link.active:focus,
+[class*=sidebar-dark-] .nav-treeview>.nav-item>.nav-link.active:hover {
+    background-color: var(--secondary);
+}
+
+/* card */
+.card-primary:not(.card-outline)>.card-header {
+    background-color: var(--primary);
+}
+
+/* form */
+
+.empty {
+    color: gainsboro;
+}
+
+/* radio */
+
+.draft {
+    --class-accent-color: var(--warning);
+}
+
+.submit {
+    --class-accent-color: #0069d9;
+}
+
+.review {
+    --class-accent-color: var(--info);
+}
+
+.reject {
+    --class-accent-color: var(--danger);
+}
+
+.approve {
+    --class-accent-color: var(--success);
+}
+
+input[type=radio] {
+    appearance: none;
+    width: 13px;
+    height: 13px;
+    background-color: gainsboro;
+    border-radius: 50%;
+}
+
+input[type=radio]:checked::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;right: 0;top: 0;
+    background-color: var(--class-accent-color);
+}
+div.form-check label{
+    color: var(--class-accent-color);
+}
+div.form-check input[type=radio]:checked ~ label{
+    background-color: var(--class-accent-color);
+    color: white;
+    padding: 0 3px;
+    border-radius: 3px;
+}
+
+/* table */
+
 .table .card-tools {
     position: absolute;
     top: 30px;
     right: 40px;
 }
 
+table span:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+table .detail {
+    color: var(--info);
+}
+
+table .edit {
+    color: var(--warning);
+}
+
+table .delete {
+    color: var(--danger);
+}
+
+
 .tambah {
     width: fit-content;
     display: flex;
 }
-.tambah button{
+
+.tambah button {
     border-style: dashed;
 }

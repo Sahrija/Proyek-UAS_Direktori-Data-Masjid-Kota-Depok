@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Cendikia | Registrasi Mesjid</title>
+  <title>Cendikia | Daftar Berita</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet"
@@ -55,8 +55,7 @@
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
       <!-- Brand Logo -->
       <a href=".." class="brand-link">
-        <img src="img/logo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
-          style="opacity: .8">
+        <img src="img/logo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
         <span class="brand-text font-weight-light">Cendikia</span>
       </a>
 
@@ -75,7 +74,7 @@
         <!-- SidebarSearch Form -->
         <div class="form-inline">
           <div class="input-group" data-widget="sidebar-search">
-            <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search" required>
+            <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
             <div class="input-group-append">
               <button class="btn btn-sidebar">
                 <i class="fas fa-search fa-fw"></i>
@@ -88,9 +87,9 @@
         <nav class="mt-2">
           <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
             <!-- Add icons to the links using the .nav-icon class
-              with font-awesome or any other icon font library -->
+with font-awesome or any other icon font library -->
             <li class="nav-item menu-open">
-              <a href="#" class="nav-link active">
+              <a href="#" class="nav-link">
                 <img src="img/mosque.png" width="20px" alt="">
                 <p>
                   Kelola Mesjid
@@ -105,7 +104,7 @@
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="registrasi-mesjid.html" class="nav-link active">
+                  <a href="registrasi-mesjid.html" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>Registrasi Mesjid</p>
                   </a>
@@ -113,7 +112,7 @@
               </ul>
             </li>
             <li class="nav-item menu-open">
-              <a href="#" class="nav-link">
+              <a href="#" class="nav-link active">
                 <img src="img/news.png" width="20px" alt="">
                 <p>
                   Kelola Berita
@@ -122,7 +121,7 @@
               </a>
               <ul class="nav nav-treeview">
                 <li class="nav-item">
-                  <a href="daftar-berita.html" class="nav-link  ">
+                  <a href="daftar-berita.html" class="nav-link active">
                     <i class="far fa-circle nav-icon"></i>
                     <p>Daftar Berita</p>
                   </a>
@@ -160,7 +159,7 @@
               <ol class="breadcrumb float-sm-right">
                 <li class="breadcrumb-item"><a href="../">Home</a></li>
                 <li class="breadcrumb-item active">Admin</li>
-                <li class="breadcrumb-item active">Registrasi Mesjid</li>
+                <li class="breadcrumb-item active">Daftar Berita</li>
               </ol>
             </div><!-- /.col -->
           </div><!-- /.row -->
@@ -171,72 +170,147 @@
       <!-- Main content -->
       <section class="content">
         <div class="container-fluid">
-          <div class="card card-primary">
+          <div class="card table">
             <div class="card-header">
-              <h3 class="card-title">Registrasi Mesjid Baru</h3>
+              <h3 class="card-title">Daftar Berita</h3>
+              <br>
+              <a class="tambah" href="tambah-berita.html">
+                <button type="button" class="btn btn-sm btn-block btn-outline-primary">+ Tambah Berita</button>
+              </a>
+              <div class="card-tools">
+                <div class="input-group input-group-sm" style="width: 150px;">
+                  <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
+                  <div class="input-group-append">
+                    <button type="submit" class="btn btn-default">
+                      <i class="fas fa-search"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
             <!-- /.card-header -->
-            <!-- form start -->
-            <form>
-              <div class="card-body">
-                <div class="form-group">
-                  <label for="nama-mesjid">Nama Mesjid</label>
-                  <input type="text" class="form-control" id="nama-mesjid" placeholder="Nama mesjid" required>
-                </div>
-                <div class="row">
-                  <div class="col-sm-6">
-                    <div class="form-group">
-                      <label style="width: fit-content;" for="kecamatan">Kecamatan</label>
-                      <select name="" id="kecamatan" class="form-control" required>
-                        <option class="empty" value="n">Pilih kecamatan</option>
-                        <option value="cimanggis">Cimanggis</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="col-sm-6">
-                    <div class="form-group">
-                      <label style="width: fit-content;" for="kelurahan">Desa/Kelurahan</label>
-                      <select name="" id="kelurahan" class="form-control" required>
-                        <option value="">Pilih desa/kelurahan</option>
-                        <option value="tugu">Tugu</option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label for="deskripsi-fasilitas">Deskripsi Fasilitas</label>
-                  <textarea class="form-control" name="" id="deskripsi-fasilitas" placeholder="Deskripsi fasilitas" required></textarea>
-                </div>
-                <div class="form-group">
-                  <label for="pengurus">Nama Pengurus DKM</label>
-                  <input type="text" class="form-control" id="pengurus" placeholder="Nama pengurus DKM" required>
-                </div>
-                <div class="form-group">
-                  <label for="no-telp">Nomor Telepon</label>
-                  <input type="tel" name="" id="no-telp" class="form-control" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}" required>
-                  <small>format nomor: 0800-5678-9012</small>
-                </div>
-                <div class="form-group">
-                  <label for="email">Email</label>
-                  <input type="email" class="form-control" id="email" placeholder="Alamat E-Mail">
-                </div>
-                <div class="form-group">
-                  <label for="alamat-web">Alamat Web</label>
-                  <input type="email" class="form-control" id="alamat-web" placeholder="https://" value="https://">
-                </div>
-                <div class="form-group">
-                  <label for="alamat">Alamat Lengkap</label>
-                  <textarea class="form-control" name="" id="alamat" placeholder="Alamat lengkap" required></textarea>
-                </div>
-              </div>
-              <!-- /.card-body -->
-
-              <div class="card-footer">
-                <button type="submit" class="btn btn-primary">Simpan</button>
-                <button type="submit" class="btn btn-secondary">Update</button>
-                <button type="reset" class="btn btn-danger">Hapus</button>
-              </div>
-            </form>
+            <div class="card-body table-responsive p-0" style="height: 300px;">
+              <table class="table table-head-fixed text-nowrap">
+                <thead>
+                  <tr>
+                    <th>No</th>
+                    <th>Tanggal</th>
+                    <th>Judul Berita</th>
+                    <th>Mesjid</th>
+                    <th>Penulis</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>11-7-2014</td>
+                    <td>John Doe</td>
+                    <td>nama mesjid</td>
+                    <td>nama penulis</td>
+                    <td><span class="tag tag-success">Approved</span></td>
+                    <td>
+                      <span class="detail">detail</span> |
+                      <span class="edit">edit</span> |
+                      <span class="delete">delete</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>11-7-2014</td>
+                    <td>Alexander Pierce</td>
+                    <td>nama mesjid</td>
+                    <td>nama penulis</td>
+                    <td><span class="tag tag-warning">Pending</span></td>
+                    <td>
+                      <span class="detail">detail</span> |
+                      <span class="edit">edit</span> |
+                      <span class="delete">delete</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>11-7-2014</td>
+                    <td>Bob Doe</td>
+                    <td>nama mesjid</td>
+                    <td>nama penulis</td>
+                    <td><span class="tag tag-primary">Approved</span></td>
+                    <td>
+                      <span class="detail">detail</span> |
+                      <span class="edit">edit</span> |
+                      <span class="delete">delete</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>11-7-2014</td>
+                    <td>Mike Doe</td>
+                    <td>nama mesjid</td>
+                    <td>nama penulis</td>
+                    <td><span class="tag tag-danger">Denied</span></td>
+                    <td>
+                      <span class="detail">detail</span> |
+                      <span class="edit">edit</span> |
+                      <span class="delete">delete</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>11-7-2014</td>
+                    <td>Jim Doe</td>
+                    <td>nama mesjid</td>
+                    <td>nama penulis</td>
+                    <td><span class="tag tag-success">Approved</span></td>
+                    <td>
+                      <span class="detail">detail</span> |
+                      <span class="edit">edit</span> |
+                      <span class="delete">delete</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>11-7-2014</td>
+                    <td>Victoria Doe</td>
+                    <td>nama mesjid</td>
+                    <td>nama penulis</td>
+                    <td><span class="tag tag-warning">Pending</span></td>
+                    <td>
+                      <span class="detail">detail</span> |
+                      <span class="edit">edit</span> |
+                      <span class="delete">delete</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>11-7-2014</td>
+                    <td>Michael Doe</td>
+                    <td>nama mesjid</td>
+                    <td>nama penulis</td>
+                    <td><span class="tag tag-primary">Approved</span></td>
+                    <td>
+                      <span class="detail">detail</span> |
+                      <span class="edit">edit</span> |
+                      <span class="delete">delete</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>11-7-2014</td>
+                    <td>Rocky Doe</td>
+                    <td>nama mesjid</td>
+                    <td>nama penulis</td>
+                    <td><span class="tag tag-danger">Denied</span></td>
+                    <td>
+                      <span class="detail">detail</span> |
+                      <span class="edit">edit</span> |
+                      <span class="delete">delete</span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- /.card-body -->
           </div>
         </div><!-- /.container-fluid -->
       </section>
@@ -244,8 +318,8 @@
     </div>
     <!-- /.content-wrapper -->
     <footer class="main-footer">
-			<strong>Developed by Mahasiswa STT-NF @ 2023</strong>
-		</footer>
+      <strong>Developed by Mahasiswa STT-NF @ 2023</strong>
+    </footer>
 
     <!-- Control Sidebar -->
     <aside class="control-sidebar control-sidebar-dark">
@@ -287,9 +361,6 @@
   <script src="dist/js/adminlte.js"></script>
   <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
   <script src="dist/js/pages/dashboard.js"></script>
-  <!-- ion icons -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>

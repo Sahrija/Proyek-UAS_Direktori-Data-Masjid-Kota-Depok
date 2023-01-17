@@ -12863,9 +12863,8 @@ body:not(.layout-fixed) .main-sidebar .sidebar {
 }
 
 [class*="sidebar-dark-"] {
-  background-color: #181D31;
+  background-color: #393E46;
 }
-
 [class*="sidebar-dark-"] .user-panel a:hover {
   color: #fff;
 }
