@@ -9,18 +9,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="admin/plugins/fontawesome-free/css/all.min.css">
   <!-- Ionicons -->
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <!-- icheck bootstrap -->
-  <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <link rel="stylesheet" href="admin/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="admin/dist/css/adminlte.min.css">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  <!-- custom stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="hold-transition register-page">
+  <a href="home.html" class="back-btn btn btn-primary">&lt;</a>
   <div class="register-box">
     <div class="register-logo">
       <a href="index2.html"><b>Registrasi User</b></a>
@@ -30,7 +33,7 @@
       <div class="card-body register-card-body">
         <p class="login-box-msg">Silakan isi registrasi di bawah ini</p>
 
-        <form  onsubmit="return daftar(this);"  action="index.html" method="post">
+        <form onsubmit="return regist(this);" method="post">
           <div class="input-group mb-3">
             <input id="name" type="text" class="form-control" placeholder="Nama Lengkap">
             <div class="input-group-append">
@@ -71,6 +74,9 @@
               </div>
             </div>
           </div>
+          <div class="input-group mb-3">
+            <p>Sudah punya akun? <a href="login.html">masuk disini</a></p>
+          </div>
           <div class="row">
             <div class="col-8">
               <div class="icheck-primary">
@@ -88,16 +94,15 @@
           </div>
         </form>
       </div>
-      <div id="s">s</div>
       <!-- /.form-box -->
     </div><!-- /.card -->
   </div>
   <!-- /.register-box -->
-  
-  <!-- jQuery -->
-  
 
-  <script src="js/form.js"></script>
+  <!-- jQuery -->
+
+
+  <script src="js/script.js"></script>
 </body>
 
 </html>

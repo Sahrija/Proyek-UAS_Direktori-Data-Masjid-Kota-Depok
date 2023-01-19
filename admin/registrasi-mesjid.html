@@ -35,7 +35,7 @@
 
     <!-- Preloader -->
     <div class="preloader flex-column justify-content-center align-items-center">
-      <img class="animation__shake" src="img/loveCoffee.png" alt="AdminLTELogo" height="60" width="60">
+      <img class="animation__shake" src="img/logo.png" alt="AdminLTELogo" height="60" width="60">
     </div>
 
     <!-- Navbar -->
@@ -137,7 +137,7 @@
             </li>
             <li class="nav-item logout">
               <a href="../login.html" class="nav-link">
-                <i class="nav-icon far fa-circle text-info"></i>
+                <i class="nav-icon fa-sign-out-alt fas text-danger"></i>
                 <p>Logout</p>
               </a>
             </li>
@@ -177,7 +177,7 @@
             </div>
             <!-- /.card-header -->
             <!-- form start -->
-            <form>
+            <form onsubmit="setFormSubmitting()">
               <div class="card-body">
                 <div class="form-group">
                   <label for="nama-mesjid">Nama Mesjid</label>
@@ -188,17 +188,26 @@
                     <div class="form-group">
                       <label style="width: fit-content;" for="kecamatan">Kecamatan</label>
                       <select name="" id="kecamatan" class="form-control" required>
-                        <option class="empty" value="n">Pilih kecamatan</option>
+                        <option value="">Pilih kecamatan</option>
+                        <option value="beji">Beji</option>
+                        <option value="bojongsari">Bojongsari</option>
+                        <option value="cilodong">Cilodong</option>
                         <option value="cimanggis">Cimanggis</option>
+                        <option value="cinere">Cinere</option>
+                        <option value="cipayung">Cipayung</option>
+                        <option value="limo">Limo</option>
+                        <option value="pancoran mas">Pancoran Mas</option>
+                        <option value="sawangan">Sawangan</option>
+                        <option value="sukmajaya">Sukmajaya</option>
+                        <option value="tapos">Tapos</option>
                       </select>
                     </div>
                   </div>
                   <div class="col-sm-6">
                     <div class="form-group">
-                      <label style="width: fit-content;" for="kelurahan">Desa/Kelurahan</label>
+                      <label style="width: fit-content;" for="kelurahan">Kelurahan</label>
                       <select name="" id="kelurahan" class="form-control" required>
-                        <option value="">Pilih desa/kelurahan</option>
-                        <option value="tugu">Tugu</option>
+                        <option value="">Pilih kecamatan terlebih dahulu</option>
                       </select>
                     </div>
                   </div>
@@ -222,7 +231,7 @@
                 </div>
                 <div class="form-group">
                   <label for="alamat-web">Alamat Web</label>
-                  <input type="email" class="form-control" id="alamat-web" placeholder="https://" value="https://">
+                  <input type="text" class="form-control" id="alamat-web" placeholder="https://" value="https://">
                 </div>
                 <div class="form-group">
                   <label for="alamat">Alamat Lengkap</label>
@@ -290,6 +299,7 @@
   <!-- ion icons -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

@@ -1,5 +1,150 @@
-.nav-link-login{
-    position: absolute;right: 20px;top: 10px;
-    padding: 5px 10px;
-    color: white;
+:root {
+    --primary: #6D9886;
+    --secondary: ;
+    --bg-light: #F7F7F7;
+    --bg-dark: #212121;
+    --item-dark: #3f444d;
+    --primary-dark: #97DECE;
 }
+
+/* navbar */
+body {
+    background-color: var(--bg-light);
+}
+
+nav {
+    position: fixed !important;
+    width: 100%;
+    z-index: 1;
+}
+
+.title{
+
+}
+.subtitle{
+    color: var(--item-dark) !important;
+}
+
+.logo{
+    width: 30px;
+}
+
+
+/* header */
+.hero {
+    height: 100vh;
+    background-image: url("../img/background.jpg");
+    background-size: cover;
+    backdrop-filter: blur(3px);
+}
+
+
+/* section starts================================= */
+.feature.bg-primary.bg-gradient.text-white.rounded-3.mb-3 {
+    background-color: #393E46 !important;
+    background-image: none !important;
+}
+
+
+
+/* form validation pages */
+.login-page,
+.register-page {
+    height: fit-content;
+}
+
+.back-btn {
+    position: absolute;
+    color: white !important;
+    font-weight: bold !important;
+    border-style: solid;
+    border-radius: 5px;
+    left: 10px;
+    top: 10px;
+}
+
+
+.btn-primary{
+    background-color: var(--primary);
+    border-color: var(--primary);
+    border-radius: 5px;
+}
+.btn-primary:hover{
+    background-color: var(--item-dark);
+}
+.btn-primary:active{
+    background-color: var(--item-dark);
+}.btn-outline-light{
+    border-color: var(--item-dark);
+    color: var(--item-dark);
+}
+
+
+
+
+/* dark mode ===============*/
+/* @media (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--bg-dark) !important;
+        color: white;
+    }
+
+    section.bg-light {
+        background-color: white;
+    }
+
+    .text-muted {
+        color: white !important;
+    }
+
+    .card,
+    .card .card-body,
+    .feature {
+        color: white !important;
+        background-color: var(--item-dark);
+    }
+
+    .hero {
+        background-image: url(../img/background-image-dark.jpg);
+        backdrop-filter: blur(2px);
+        color: white;
+    }
+
+
+    .form-control, input, textarea {
+        background-color: #556 !important;
+        border-width: 2px !important;
+        color: white !important;
+    }
+
+    .form-floating {
+        color: #999D;
+    }
+
+    :where(input, textarea):focus {
+        color: white;
+        border-color: greenyellow !important;
+        box-shadow: 0 0 0 .2rem rgba(172, 255, 47, 0.301) !important;
+    }
+
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+        -webkit-box-shadow: 0 0 0 30px var(--bg-dark) inset !important;
+        -webkit-text-fill-color: #F7F7F7;
+    }
+
+
+
+    /* login page 
+    .login-logo a, .register-logo a{
+        color: rgb(210, 210, 210);
+    }
+
+    .btn-primary{
+        background-color: var(--primary-dark);
+        border-color: var(--primary-dark);
+        color: var(--item-dark);
+    }
+} */

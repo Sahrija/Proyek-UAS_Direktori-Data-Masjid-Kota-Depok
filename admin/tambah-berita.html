@@ -35,7 +35,7 @@
 
     <!-- Preloader -->
     <div class="preloader flex-column justify-content-center align-items-center">
-      <img class="animation__shake" src="img/loveCoffee.png" alt="AdminLTELogo" height="60" width="60">
+      <img class="animation__shake" src="img/logo.png" alt="AdminLTELogo" height="60" width="60">
     </div>
 
     <!-- Navbar -->
@@ -137,7 +137,7 @@
             </li>
             <li class="nav-item logout">
               <a href="../login.html" class="nav-link">
-                <i class="nav-icon far fa-circle text-info"></i>
+                <i class="nav-icon fa-sign-out-alt fas text-danger"></i>
                 <p>Logout</p>
               </a>
             </li>
@@ -189,11 +189,11 @@
                 </div>
                 <div class="form-group">
                   <label for="isi-berita">Isi Berita</label>
-                  <textarea type="text" class="form-control" id="isi-berita" placeholder="Isi berita"></textarea>
+                  <textarea type="text" class="form-control" id="isi-berita" placeholder="Isi berita" required></textarea>
                 </div>
                 <div class="form-group">
                   <label for="penulis">Penulis</label>
-                  <textarea type="text" class="form-control" id="penulis" placeholder="Nama penulis"></textarea>
+                  <input type="text" class="form-control" id="penulis" placeholder="Nama penulis" required>
                 </div>
                 <div class="form-group">
                   <label for="tanggal-terbit">Tanggal Terbit</label>
@@ -207,19 +207,19 @@
                     <label for="draft" class="form-check-label draft">Draft</label>
                   </div>
                   <div class="form-check">
-                    <input type="radio" name="status" id="submit" class="form-check-input submit" required>
+                    <input type="radio" name="status" id="submit" class="form-check-input submit">
                     <label for="submit" class="form-check-label submit">Submit</label>
                   </div>
                   <div class="form-check">
-                    <input type="radio" name="status" id="review" class="form-check-input review" required>
+                    <input type="radio" name="status" id="review" class="form-check-input review">
                     <label for="review" class="form-check-label review">Review</label>
                   </div>
                   <div class="form-check">
-                    <input type="radio" name="status" id="reject" class="form-check-input reject" required>
+                    <input type="radio" name="status" id="reject" class="form-check-input reject">
                     <label for="reject" class="form-check-label reject">Reject</label>
                   </div>
                   <div class="form-check">
-                    <input type="radio" name="status" id="approve" class="form-check-input approve" required>
+                    <input type="radio" name="status" id="approve" class="form-check-input approve">
                     <label for="approve" class="form-check-label approve">Approve</label>
                   </div>
                 </div>

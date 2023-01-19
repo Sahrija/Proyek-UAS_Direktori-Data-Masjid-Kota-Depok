@@ -35,7 +35,7 @@
 
     <!-- Preloader -->
     <div class="preloader flex-column justify-content-center align-items-center">
-      <img class="animation__shake" src="img/loveCoffee.png" alt="AdminLTELogo" height="60" width="60">
+      <img class="animation__shake" src="img/logo.png" alt="AdminLTELogo" height="60" width="60">
     </div>
 
     <!-- Navbar -->
@@ -136,7 +136,7 @@
             </li>
             <li class="nav-item logout">
               <a href="../login.html" class="nav-link">
-                <i class="nav-icon far fa-circle text-info"></i>
+                <i class="nav-icon fa-sign-out-alt fas text-danger"></i>
                 <p>Logout</p>
               </a>
             </li>
@@ -172,21 +172,27 @@
         <div class="container-fluid">
           <div class="card table">
             <div class="card-header">
-              <h3 class="card-title">Daftar Mesjid</h3>
-              <br>
-              <a class="tambah" href="registrasi-mesjid.html">
-                <button type="button" class="btn btn-sm btn-block btn-outline-primary">+ Tambah Mesjid</button>
-              </a>
-              <div class="card-tools">
-                <div class="input-group input-group-sm" style="width: 150px;">
-                  <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
-                  <div class="input-group-append">
-                    <button type="submit" class="btn btn-default">
-                      <i class="fas fa-search"></i>
-                    </button>
-                  </div>
+              <div class="card-header-container">
+                <div class="col">
+                  <h3 class="card-title">Daftar Mesjid</h3>
+                  <br>
+                  <a class="tambah" href="registrasi-mesjid.html">
+                    <button type="button" class="btn btn-sm btn-block btn-outline-primary">+ Tambah Mesjid</button>
+                  </a>
                 </div>
+                  <div class="card-tools">
+                    <div class="input-group input-group-sm" style="width: 150px;">
+                      <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
+                      <div class="input-group-append">
+                        <button type="submit" class="btn btn-default">
+                          <i class="fas fa-search"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
               </div>
+
+
             </div>
             <!-- /.card-header -->
             <div class="card-body table-responsive p-0" style="height: 300px;">

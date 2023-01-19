@@ -3,6 +3,20 @@
  * Copyright 2014-2022 Colorlib <https://colorlib.com>
  * Licensed under MIT (https://github.com/ColorlibHQ/AdminLTE/blob/master/LICENSE)
  */
+
+
+function addClassTag() {
+  var tagList = document.querySelectorAll(".tag")
+  for(let i = 0; i < tagList.length; i++){
+    let label = tagList[i].innerHTML;
+    tagList[i].classList.add(label.toLowerCase());
+    continue;
+  };
+  return false;
+};
+window.onload = addClassTag();
+
+
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('jquery')) :
   typeof define === 'function' && define.amd ? define(['exports', 'jquery'], factory) :

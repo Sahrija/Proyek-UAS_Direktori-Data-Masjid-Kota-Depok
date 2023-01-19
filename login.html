@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,80 +18,95 @@
   <link rel="stylesheet" href="admin/dist/css/adminlte.min.css">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  <!-- custom stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body class="hold-transition login-page">
-<div class="login-box">
-  <div class="login-logo">
-    <a href="index2.html"><b>LOGIN SISTEM DIREKTORI MESJID</b></a>
-  </div>
-  <!-- /.login-logo -->
-  <div class="card">
-    <div class="card-body login-card-body">
-      <p class="login-box-msg">Masukkan data untuk login ke dalam website</p>
+  <a href="home.html" class="back-btn btn btn-light">&lt;</a>
+  <div class="login-box">
+    <div class="login-logo">
+      <a href="home.html" class="back-btn btn btn-primary">&lt;</a>
+    </div>
+    <div class="register-logo">
+      <a href="index2.html"><b>
+          Login
+          <br>
+          Cendikia
+        </b></a>
+    </div>
+    <!-- /.login-logo -->
+    <div class="card">
+      <div class="card-body login-card-body">
+        <p class="login-box-msg">Masukkan data untuk login ke dalam website</p>
 
-      <form action="index3.html" method="post" onsubmit="login()">
-        <div class="input-group mb-3">
-          <input type="text" id="username" class="form-control" placeholder="Username" required>
-          <div class="input-group-append">
-            <div class="input-group-text">
-              <span class="fas fa-envelope"></span>
+        <form action="index3.html" method="post" onsubmit="login()">
+          <div class="input-group mb-3">
+            <input type="text" id="username" class="form-control" placeholder="Username" required>
+            <div class="input-group-append">
+              <div class="input-group-text">
+                <span class="fas fa-envelope"></span>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="input-group mb-3">
-          <input type="password" id="password" class="form-control" placeholder="Password" required>
-          <div class="input-group-append">
-            <div class="input-group-text">
-              <span class="fas fa-lock"></span>
+          <div class="input-group mb-3">
+            <input type="password" id="password" class="form-control" placeholder="Password" required>
+            <div class="input-group-append">
+              <div class="input-group-text">
+                <span class="fas fa-lock"></span>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-8">
-            <div class="icheck-primary">
-              <input type="checkbox" id="ingat">
-              <label for="ingat">
-                Ingat saya
-              </label>
+          <div class="input-group mb-3">
+            <p>Belum punya akun? <a href="register.html">registrasi akun disini</a></p>
+          </div>
+          <div class="row">
+            <div class="col-8">
+              <div class="icheck-primary">
+                <input type="checkbox" id="ingat">
+                <label for="ingat">
+                  Ingat saya
+                </label>
+              </div>
             </div>
+            <!-- /.col -->
+            <div class="col-4">
+              <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+            </div>
+            <!-- /.col -->
           </div>
-          <!-- /.col -->
-          <div class="col-4">
-            <button type="submit" class="btn btn-primary btn-block">Sign In</button>
-          </div>
-          <!-- /.col -->
-        </div>
-      </form>
-      
-      <!-- /.social-auth-links -->
+        </form>
 
-  </div>
-</div>
-<!-- /.login-box -->
+        <!-- /.social-auth-links -->
 
-<!-- jQuery -->
-<script src="admin/plugins/jquery/jquery.min.js"></script>
-<!-- Bootstrap 4 -->
-<script src="admin/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-<!-- AdminLTE App -->
-<script src="admin/dist/js/adminlte.min.js"></script>
+      </div>
+    </div>
+    <!-- /.login-box -->
 
-<script>
-  function login() {
-    event.preventDefault();
+    <!-- jQuery -->
+    <script src="admin/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="admin/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="admin/dist/js/adminlte.min.js"></script>
 
-    let uname = document.getElementById("username").value;
-    let pass = document.getElementById("password").value;
+    <script>
+      function login() {
+        event.preventDefault();
 
-    if (uname == "admin" && pass == "admin") {
-        location.replace("");
-        alert("Login berhasil");
-        window.location = "index.html"
-    } else {
-        alert("Login gagal")
-    }
-}
-</script>
+        let uname = document.getElementById("username").value;
+        let pass = document.getElementById("password").value;
+
+        if (uname == "admin" && pass == "admin") {
+          location.replace("");
+          alert("Login berhasil");
+          window.location = "admin"
+        } else {
+          alert("Login gagal")
+        }
+      }
+    </script>
 
 </body>
+
 </html>
