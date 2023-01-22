@@ -12,11 +12,12 @@
 
 /* navbar */
 body {
+word-wrap:normal;
     background-color: var(--bg-light);
     font-family: 'Roboto Flex', sans-serif;
     font-weight: 200;
 }
-
+p{word-wrap: normal;}
 h1 {
     font-family: "ABeeZee", sans-serif;
 }
