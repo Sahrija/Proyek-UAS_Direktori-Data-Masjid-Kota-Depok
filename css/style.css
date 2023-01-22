@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,500;8..144,600&display=swap');
+
 :root {
     --primary: #6D9886;
     --secondary: ;
@@ -10,7 +13,24 @@
 /* navbar */
 body {
     background-color: var(--bg-light);
+    font-family: 'Roboto Flex', sans-serif;
+    font-weight: 200;
 }
+
+h1 {
+    font-family: "ABeeZee", sans-serif;
+}
+
+/* anchor to inherited color */
+a.card-link {
+    color: inherit;
+}
+
+a.card-link:hover {
+    color: inherit;
+}
+
+
 
 nav {
     position: fixed !important;
@@ -18,16 +38,18 @@ nav {
     z-index: 1;
 }
 
-.title{
+.login
 
-}
-.subtitle{
+.title {}
+
+.subtitle {
     color: var(--item-dark) !important;
 }
 
-.logo{
+.logo {
     width: 30px;
 }
+
 
 
 /* header */
@@ -45,13 +67,93 @@ nav {
     background-image: none !important;
 }
 
+/* berita.html */
 
+.title-container {
+    margin-left: 20px;
+}
+
+/* berita */
+.berita-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* card */
+.berita-container .card {
+    display: block;
+    max-width: 700px;
+    flex-shrink: 1;
+    flex-basis: 300px;
+    flex-grow: 1;
+    min-width: 200px;
+    width: auto;
+    font-size: 14px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: none;
+    transition: .5s;
+}
+
+.berita-container .card h2 {
+    border-bottom: solid var(--primary);
+    font-size: 18px;
+}
+
+/* card img */
+.card img.foto-berita {
+    margin: 10px;
+    max-height: 160px;
+    object-fit: cover;
+    float: left;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+}
+
+.card-footer::after {
+    content: none;
+}
+
+.card-footer img.card-icon {
+    width: 30px;
+}
+
+.card-footer>div {
+    padding: 5px;
+    border-radius: 3px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.card-footer>div:hover {
+    background-color: var(--primary-dark);
+}
+
+
+/* card hover animation */
+.card {
+    transition: .5s;
+}
+
+.card:hover {
+    transform: translate(0, -5px);
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.344);
+    transition: 0.5s;
+}
 
 /* form validation pages */
 .login-page,
 .register-page {
     height: fit-content;
 }
+.login-page .card:hover,
+.register-page .card:hover{transform: translate(0, 0);}
 
 .back-btn {
     position: absolute;
@@ -64,22 +166,24 @@ nav {
 }
 
 
-.btn-primary{
+.btn-primary {
     background-color: var(--primary);
     border-color: var(--primary);
     border-radius: 5px;
 }
-.btn-primary:hover{
+
+.btn-primary:hover {
     background-color: var(--item-dark);
 }
-.btn-primary:active{
+
+.btn-primary:active {
     background-color: var(--item-dark);
-}.btn-outline-light{
+}
+
+.btn-outline-light {
     border-color: var(--item-dark);
     color: var(--item-dark);
 }
-
-
 
 
 /* dark mode ===============*/
