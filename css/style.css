@@ -109,7 +109,7 @@ nav {
 }
 
 .berita-container .card h2,
-#data-mesjid h2 {
+.mesjid-container h2 {
     border-bottom: solid var(--primary);
     font-size: 18px;
 }
@@ -278,18 +278,21 @@ img.profil-mesjid {
     width: 100%;
     max-width: 400px;
 }
-
+i
 /* data mesjid lain */
-
-
+.container.daftar-mesjd{display: flex;}
+.container.daftar-mesjd>*{}
+.container.daftar-mesjid .card-body{display: flex;flex-direction: row;gap: 10px;}
+.container.daftar-mesjid .card-body img{width: 200px;}
 
 
 /* dark mode ===============*/
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
     body {
         background-color: var(--bg-dark) !important;
         color: white;
     }
+    p{color: rgb(181, 181, 181);}
 
     section.bg-light {
         background-color: white;
@@ -339,7 +342,7 @@ img.profil-mesjid {
 
 
 
-    /* login page 
+    /* login page  */
     .login-logo a, .register-logo a{
         color: rgb(210, 210, 210);
     }
@@ -349,4 +352,6 @@ img.profil-mesjid {
         border-color: var(--primary-dark);
         color: var(--item-dark);
     }
-} */
+
+    .card-footer input{background-color: transparent !important;}
+}
