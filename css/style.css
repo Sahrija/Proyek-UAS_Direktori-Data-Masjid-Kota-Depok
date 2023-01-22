@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,500;8..144,600&display=swap');
 
+* {
+    transition: all 0.5s;
+}
+
 :root {
     --primary: #6D9886;
     --secondary: ;
@@ -15,6 +19,11 @@ body {
     background-color: var(--bg-light);
     font-family: 'Roboto Flex', sans-serif;
     font-weight: 200;
+}
+
+p {
+    font-weight: 300;
+    font-size: 15px;
 }
 
 h1 {
@@ -38,9 +47,7 @@ nav {
     z-index: 1;
 }
 
-.login
-
-.title {}
+.login .title {}
 
 .subtitle {
     color: var(--item-dark) !important;
@@ -82,7 +89,8 @@ nav {
 }
 
 /* card */
-.berita-container .card {
+.berita-container .card,
+#data-mesjid .card {
     display: block;
     max-width: 700px;
     flex-shrink: 1;
@@ -95,9 +103,11 @@ nav {
     margin: 10px;
     box-shadow: none;
     transition: .5s;
+    position: relative;
 }
 
-.berita-container .card h2 {
+.berita-container .card h2,
+#data-mesjid h2 {
     border-bottom: solid var(--primary);
     font-size: 18px;
 }
@@ -105,19 +115,49 @@ nav {
 /* card img */
 .card img.foto-berita {
     margin: 10px;
-    max-height: 160px;
+    max-height: 100px;
     object-fit: cover;
     float: left;
 }
 
 .card-footer {
     display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 0;
     justify-content: space-evenly;
+    align-items: center;
     padding: 0;
 }
 
 .card-footer::after {
     content: none;
+}
+
+.card-footer input.like {
+    --icon-size:30px;
+    appearance: none;
+    width: var(--icon-size);
+    height: var(--icon-size);
+    position: relative;
+}
+
+.card-footer input::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/heart.png);
+    background-size: var(--icon-size);
+    /* background-color: red; */
+}
+.card-footer input.like::after {}
+.card-footer input.comment::after {}
+.card-footer input.bookmark::after {}
+
+
+.card-footer input.like:checked::after {
+    background-image: url(../img/heart-checked.png);    
 }
 
 .card-footer img.card-icon {
@@ -152,8 +192,12 @@ nav {
 .register-page {
     height: fit-content;
 }
+
+.card.on-bg:hover,
 .login-page .card:hover,
-.register-page .card:hover{transform: translate(0, 0);}
+.register-page .card:hover {
+    transform: translate(0, 0);
+}
 
 .back-btn {
     position: absolute;
@@ -184,6 +228,47 @@ nav {
     border-color: var(--item-dark);
     color: var(--item-dark);
 }
+
+.card.on-bg {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+
+
+/* daftar mesjid */
+
+/* mesjid utama */
+.card-header {
+    border-bottom: none;
+    margin: 0;
+    padding: 0;
+}
+
+.card-mesjid-utama .card-body {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.card-mesjid-utama .card-body:first-child {
+    flex: 1;
+}
+
+.card-mesjid-utama .card-body:last-child {
+    flex: 6;
+}
+
+img.profil-mesjid {
+    width: 100%;
+    max-width: 400px;
+}
+
+/* data mesjid lain */
+
+
 
 
 /* dark mode ===============*/
