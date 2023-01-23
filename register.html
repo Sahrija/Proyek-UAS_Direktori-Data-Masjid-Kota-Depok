@@ -20,13 +20,15 @@
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
   <!-- custom stylesheet -->
   <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href=".ico" type="image/x-icon">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 
 <body class="hold-transition register-page">
   <a href="home.html" class="back-btn btn btn-primary">&lt;</a>
   <div class="register-box">
     <div class="register-logo">
-      <a href="index2.html"><b>Registrasi User</b></a>
+      <a href="home.html"><b>Registrasi User</b></a>
     </div>
 
     <div class="card">
@@ -35,7 +37,7 @@
 
         <form onsubmit="return regist(this);" method="post">
           <div class="input-group mb-3">
-            <input id="name" type="text" class="form-control" placeholder="Nama Lengkap">
+            <input type="text" class="form-control" placeholder="Nama Lengkap" id="name">
             <div class="input-group-append">
               <div class="input-group-text">
                 <span class="fas fa-user"></span>
@@ -43,7 +45,7 @@
             </div>
           </div>
           <div class="input-group mb-3">
-            <input type="email" class="form-control" placeholder="Email">
+            <input type="email" class="form-control" placeholder="Email" id="email">
             <div class="input-group-append">
               <div class="input-group-text">
                 <span class="fas fa-envelope"></span>
@@ -51,7 +53,7 @@
             </div>
           </div>
           <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Username">
+            <input type="text" class="form-control" placeholder="Username" id="username">
             <div class="input-group-append">
               <div class="input-group-text">
                 <span class="fas fa-user"></span>
@@ -59,17 +61,17 @@
             </div>
           </div>
           <div class="input-group mb-3">
-            <input type="password" class="form-control" placeholder="Password">
+            <input type="password" class="form-control" placeholder="Password" id="password">
             <div class="input-group-append">
-              <div class="input-group-text">
+              <div class="input-group-text" onclick="toggleVisiblePassword(document.getElementById('password'))">
                 <span class="fas fa-lock"></span>
               </div>
             </div>
           </div>
           <div class="input-group mb-3">
-            <input type="password" class="form-control" placeholder="Cek password">
+            <input type="password" class="form-control" placeholder="Cek password" id="check-password">
             <div class="input-group-append">
-              <div class="input-group-text">
+              <div class="input-group-text" onclick="toggleVisiblePassword(document.getElementById('check-password'))">
                 <span class="fas fa-lock"></span>
               </div>
             </div>
@@ -103,6 +105,16 @@
 
 
   <script src="js/script.js"></script>
+  <script>
+    function toggleVisiblePassword(e){
+      if( e.type == "text"){
+        e.type = "password";
+      }
+      else{
+        e.type = "text";
+      }
+    }
+  </script>
 </body>
 
 </html>

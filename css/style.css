@@ -5,12 +5,16 @@
     transition: all 0.5s;
 }
 
+html {
+    scroll-behavior: smooth ease-in-out;
+}
+
 :root {
     --primary: #6D9886;
     --secondary: ;
     --bg-light: #F7F7F7;
     --bg-dark: #212121;
-    --item-dark: #3f444d;
+    --item-dark: #2c3036;
     --primary-dark: #97DECE;
 }
 
@@ -41,12 +45,18 @@ a.card-link:hover {
     color: inherit;
 }
 
-
+/* nav */
 
 nav {
     position: fixed !important;
     width: 100%;
     z-index: 1;
+}
+
+.nav-link.active {
+    background-color: #6d988683;
+    padding: 5px;
+    transition: none;
 }
 
 .login .title {}
@@ -159,7 +169,7 @@ nav {
 }
 
 .card-footer input:checked::after {
-    background-image:var(--icon-checked);
+    background-image: var(--icon-checked);
 }
 
 /* variable each options */
@@ -169,13 +179,13 @@ nav {
 }
 
 .card-footer input.comment::after {
-    --icon:url(../img/comment.png);
-    --icon-checked:url(../img/comment.png);
+    --icon: url(../img/comment.png);
+    --icon-checked: url(../img/comment.png);
 }
 
 .card-footer input.bookmark::after {
-    --icon:url(../img/bookmark.png);
-    --icon-checked:url(../img/bookmark-checked.png);
+    --icon: url(../img/bookmark.png);
+    --icon-checked: url(../img/bookmark-checked.png);
 }
 
 .card-footer>div {
@@ -192,6 +202,12 @@ nav {
 /* card hover animation */
 .card {
     transition: .5s;
+    position: relative;
+}
+
+.card input,
+.card a {
+    z-index: 5;
 }
 
 .card:hover {
@@ -260,98 +276,188 @@ nav {
 
 .card-mesjid-utama .card-body {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     gap: 20px;
     width: 100%;
     max-width: 1000px;
 }
 
-.card-mesjid-utama .card-body:first-child {
+.card-mesjid-utama .card-body>*:nth-child(1) {
     flex: 1;
 }
 
-.card-mesjid-utama .card-body:last-child {
-    flex: 6;
+.card-mesjid-utama .card-body>*:nth-child(2) {
+    flex: 2;
+}
+
+.card-mesjid-utama .deskripsi {
+    min-width: 400px;
 }
 
 img.profil-mesjid {
+    min-width: 300px;
     width: 100%;
     max-width: 400px;
 }
-i
+
 /* data mesjid lain */
-.container.daftar-mesjd{display: flex;}
-.container.daftar-mesjd>*{}
-.container.daftar-mesjid .card-body{display: flex;flex-direction: row;gap: 10px;}
-.container.daftar-mesjid .card-body img{width: 200px;}
+.container.daftar-mesjid-lain {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.card.mesjid {
+    flex: 1;
+}
+
+.container.daftar-mesjid-lain .card-body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+}
+
+.container.daftar-mesjid-lain .card-body img {
+    flex: 1;
+    flex-basis: 150px;
+    min-width: 100px;
+    max-width: 300px;
+}
+
+.container.daftar-mesjid-lain .deskripsi {
+    min-width: 300px;
+    flex: 1;
+}
+
+
+
+/* about html */
+
+
+/* TEAM */
+
+#team .card .card-body{position: relative;}
+
+.team-potrait{width: 100%;filter: saturate(10%);}
+
+.card-label{position: absolute;top: 20px;}
+
+
+
+
+
+
+/* darkmode toggle */
+
+.dark-mode-toggle {
+    position: fixed;
+    top: 20vh;
+    left: 20px;
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    z-index: 1;
+}
+
+
+
+.dark .dark-mode-toggle{}
 
 
 /* dark mode ===============*/
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: var(--bg-dark) !important;
-        color: white;
-    }
-    p{color: rgb(181, 181, 181);}
+.dark-mode body {
+    background-color: var(--bg-dark) !important;
+    color: white;
+}
 
-    section.bg-light {
-        background-color: white;
-    }
+.dark-mode p {
+    color: rgb(181, 181, 181);
+}
 
-    .text-muted {
-        color: white !important;
-    }
+.dark-mode h3 {
+    color: red !important;
+}
 
-    .card,
-    .card .card-body,
-    .feature {
-        color: white !important;
-        background-color: var(--item-dark);
-    }
+.dark-mode section.bg-light {
+    background-color: white;
+}
 
-    .hero {
-        background-image: url(../img/background-image-dark.jpg);
-        backdrop-filter: blur(2px);
-        color: white;
-    }
+.dark-mode .subtitle {
+    color: silver !important;
+}
+
+.dark-mode .text-muted {
+    color: white !important;
+}
+
+.dark-mode .card,
+.dark-mode .card .card-body,
+.dark-mode .feature {
+    color: white !important;
+    background-color: var(--item-dark);
+}
+
+.dark-mode .hero {
+    background-image: url(../img/background-image-dark.jpg);
+    backdrop-filter: blur(2px);
+    color: white;
+}
+
+.dark-mode .btn-outline-light {
+    color: white;
+    border-color: white;
+}
+
+.dark-mode .form-control,
+.dark-mode input,
+.dark-mode textarea {
+    background-color: #556 !important;
+    border-width: 2px !important;
+    color: white !important;
+}
+
+.dark-mode .form-floating {
+    color: #999D;
+}
+
+.dark-mode :where(input, textarea):focus {
+    color: white;
+    border-color: greenyellow !important;
+    box-shadow: 0 0 0 .2rem rgba(172, 255, 47, 0.301) !important;
+}
+
+.dark-mode input:-webkit-autofill,
+.dark-mode input:-webkit-autofill:hover,
+.dark-mode input:-webkit-autofill:focus,
+.dark-mode input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px var(--bg-dark) inset !important;
+    -webkit-text-fill-color: #F7F7F7;
+}
 
 
-    .form-control, input, textarea {
-        background-color: #556 !important;
-        border-width: 2px !important;
-        color: white !important;
-    }
 
-    .form-floating {
-        color: #999D;
-    }
+/* login page  */
+.dark-mode .login-logo a,
+.dark-mode .register-logo a {
+    color: rgb(210, 210, 210);
+}
 
-    :where(input, textarea):focus {
-        color: white;
-        border-color: greenyellow !important;
-        box-shadow: 0 0 0 .2rem rgba(172, 255, 47, 0.301) !important;
-    }
+.dark-mode .btn-primary {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+    color: var(--item-dark);
+}
 
-    input:-webkit-autofill,
-    input:-webkit-autofill:hover,
-    input:-webkit-autofill:focus,
-    input:-webkit-autofill:active {
-        -webkit-box-shadow: 0 0 0 30px var(--bg-dark) inset !important;
-        -webkit-text-fill-color: #F7F7F7;
-    }
+.dark-mode .card-footer input {
+    background-color: transparent !important;
+}
 
-
-
-    /* login page  */
-    .login-logo a, .register-logo a{
-        color: rgb(210, 210, 210);
-    }
-
-    .btn-primary{
-        background-color: var(--primary-dark);
-        border-color: var(--primary-dark);
-        color: var(--item-dark);
-    }
-
-    .card-footer input{background-color: transparent !important;}
+.dark-mode .card-footer input:focus,
+.dark-mode .card-footer input:focus-within {
+    box-shadow: none;
 }
