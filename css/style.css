@@ -512,4 +512,6 @@ img.profil-mesjid {
 
 
 .jadwal-sholat td, .jadwal-sholat th{border: solid;padding: 5px;cursor: pointer;}
-.jadwal-sholat td:hover, .jadwal-sholat th:hover{background-color: #556;}
+.jadwal-sholat td:hover, .jadwal-sholat th:hover{background-color: aliceblue;}
+.dark-mode .jadwal-sholat td:hover,.dark-mode .jadwal-sholat th:hover{background-color: #556;}
+.dark-mode .jadwal-sholat td,.dark-mode .jadwal-sholat th{color: rgb(169, 169, 169)}
