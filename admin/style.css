@@ -173,3 +173,44 @@ table .delete {
         background-color: red;
     }
 } */
+
+
+.dark-mode input:-webkit-autofill,
+.dark-mode input:-webkit-autofill:hover,
+.dark-mode input:-webkit-autofill:focus,
+.dark-mode textarea:-webkit-autofill,
+.dark-mode textarea:-webkit-autofill:hover,
+.dark-mode textarea:-webkit-autofill:focus,
+.dark-mode select:-webkit-autofill,
+.dark-mode select:-webkit-autofill:hover,
+.dark-mode select:-webkit-autofill:focus {
+  -webkit-text-fill-color: #fff;
+  background-color: gray;
+}
+
+.dark-mode input:-webkit-autofill, .dark-mode input:-webkit-autofill:hover, .dark-mode input:-webkit-autofill:focus, .dark-mode input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px #3f5969 inset !important;
+    -webkit-text-fill-color: #F7F7F7;
+}
+
+.dark-mode .main-header.navbar.navbar-expand.navbar-white.navbar-light{
+    background-color: #343a40;
+}
+
+.dark-mode-toggle {
+    position: fixed;
+    cursor: pointer;
+    top: 10px;
+    right: 1vw;
+    height: 40px;
+    width: 40px;
+    background-color: transparent;
+    z-index: 11;
+    background-image: url(../img/night.png);
+    background-size: 100%;
+    border: none;
+    border-radius: 50%;
+}
+
+
+

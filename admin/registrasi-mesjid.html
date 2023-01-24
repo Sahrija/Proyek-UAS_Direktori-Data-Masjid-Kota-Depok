@@ -29,6 +29,7 @@
   <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+  <script src="../js/darkmode.js"></script>
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -45,19 +46,19 @@
       <ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+          <button id="dark-mode-toggle" class="dark-mode-toggle"></button>
         </li>
       </ul>
 
       <!-- Right navbar links -->
-    </nav>
+  </nav>
     <!-- /.navbar -->
 
     <!-- Main Sidebar Container -->
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
       <!-- Brand Logo -->
       <a href=".." class="brand-link">
-        <img src="img/logo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
-          style="opacity: .8">
+        <img src="img/logo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
         <span class="brand-text font-weight-light">Cendikia</span>
       </a>
 
@@ -76,7 +77,8 @@
         <!-- SidebarSearch Form -->
         <div class="form-inline">
           <div class="input-group" data-widget="sidebar-search">
-            <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search" required>
+            <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search"
+              required>
             <div class="input-group-append">
               <button class="btn btn-sidebar">
                 <i class="fas fa-search fa-fw"></i>
@@ -142,7 +144,7 @@
                 <p>Logout</p>
               </a>
             </li>
-        </nav>
+      </nav>
         <!-- /.sidebar-menu -->
       </div>
       <!-- /.sidebar -->
@@ -215,7 +217,8 @@
                 </div>
                 <div class="form-group">
                   <label for="deskripsi-fasilitas">Deskripsi Fasilitas</label>
-                  <textarea class="form-control" name="" id="deskripsi-fasilitas" placeholder="Deskripsi fasilitas" required></textarea>
+                  <textarea class="form-control" name="" id="deskripsi-fasilitas" placeholder="Deskripsi fasilitas"
+                    required></textarea>
                 </div>
                 <div class="form-group">
                   <label for="pengurus">Nama Pengurus DKM</label>
@@ -223,7 +226,8 @@
                 </div>
                 <div class="form-group">
                   <label for="no-telp">Nomor Telepon</label>
-                  <input type="tel" name="" id="no-telp" class="form-control" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}" required>
+                  <input type="tel" name="" id="no-telp" class="form-control" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}"
+                    required>
                   <small>format nomor: 0800-5678-9012</small>
                 </div>
                 <div class="form-group">
@@ -254,8 +258,8 @@
     </div>
     <!-- /.content-wrapper -->
     <footer class="main-footer">
-			<strong>Developed by Mahasiswa STT-NF @ 2023</strong>
-		</footer>
+      <strong>Developed by Mahasiswa STT-NF @ 2023</strong>
+    </footer>
 
     <!-- Control Sidebar -->
     <aside class="control-sidebar control-sidebar-dark">
@@ -301,6 +305,8 @@
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <script src="js/script.js"></script>
+
+  <script src="../js/script.js"></script>
 </body>
 
 </html>

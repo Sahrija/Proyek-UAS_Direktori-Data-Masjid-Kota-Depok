@@ -29,6 +29,7 @@
   <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+  <script src="../js/darkmode.js"></script>
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -45,11 +46,12 @@
       <ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+          <button id="dark-mode-toggle" class="dark-mode-toggle"></button>
         </li>
       </ul>
 
       <!-- Right navbar links -->
-    </nav>
+  </nav>
     <!-- /.navbar -->
 
     <!-- Main Sidebar Container -->
@@ -141,7 +143,7 @@
                 <p>Logout</p>
               </a>
             </li>
-        </nav>
+      </nav>
         <!-- /.sidebar-menu -->
       </div>
       <!-- /.sidebar -->
@@ -181,16 +183,16 @@
                     <button type="button" class="btn btn-sm btn-block btn-outline-primary">+ Tambah Mesjid</button>
                   </a>
                 </div>
-                  <div class="card-tools">
-                    <div class="input-group input-group-sm" style="width: 150px;">
-                      <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
-                      <div class="input-group-append">
-                        <button type="submit" class="btn btn-default">
-                          <i class="fas fa-search"></i>
-                        </button>
-                      </div>
+                <div class="card-tools">
+                  <div class="input-group input-group-sm" style="width: 150px;">
+                    <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
+                    <div class="input-group-append">
+                      <button type="submit" class="btn btn-default">
+                        <i class="fas fa-search"></i>
+                      </button>
                     </div>
                   </div>
+                </div>
               </div>
 
 
@@ -368,6 +370,8 @@
   <script src="dist/js/adminlte.js"></script>
   <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
   <script src="dist/js/pages/dashboard.js"></script>
+
+  <script src="../js/script.js"></script>
 </body>
 
 </html>

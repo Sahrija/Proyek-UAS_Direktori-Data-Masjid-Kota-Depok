@@ -17,7 +17,8 @@
   <link href="../admin/dist/css/adminlte.min.css" rel="stylesheet">
 
   <link rel="stylesheet" href="../css/style.css">
-  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+  <script src="../js/darkmode.js"></script>
 </head>
 
 <body>
@@ -39,17 +40,22 @@
           <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Data Mesjid</a></li>
           <li class="nav-item"><a class="nav-link" href="../register.html">Registrasi</a></li>
           <li class="nav-item"><a class="nav-link" href="../about.html">Tentang Kami</a></li>
-          <li id="account" class="nav-item"><a class="nav-link btn-primary" href="../login.html">Login</a>
+          <li id="account" class="nav-item"><a class="nav-link btn-primary login" href="../login.html">Login</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
+  <button id="dark-mode-toggle" class="dark-mode-toggle"></button>
   <!-- Header-->
   <!-- Features section-->
   <section class="py-5 border-bottom" id="data-mesjid">
     <div class="my-5">
 
+      <ul class="breadcrumb">
+        <li class="breadcrumb-item"><a href="home.html">Home</a></li>
+        <li class="breadcrumb-item ">Data Mesjid</li>
+      </ul>
 
       <div class="">
         <div class="mb-5 title-container">
@@ -63,7 +69,7 @@
           <div class="gx-5 container">
             <div class="">
 
-              <a href="profil-mesjid-akbar/index.html" class="card-link">
+              <a href="profil-mesjid-akbar-al-hidayah/" class="card-link">
                 <div class="card-mesjid-utama">
                   <div class="card-header">
                     <h2>Mesjid Akbar Al-Hidayah</h2>
@@ -72,10 +78,17 @@
 
                     <img src="../img/mesjid akbar al hidayah.jpg" alt="" class="profil-mesjid">
 
-                    <div class="deskripsi">
-                      <p>Mesjid Akbar Al-Hidayah yang dibangun pada tahun 2012. Mesjid Akbar Al-Hidayah merupakan kategori Mesjid Umum. Mesjid Al-Hidayah beralamat di RT. 05/04 KEL Curug Depok Jawa Barat.
-                      Mesjid Al-Hidayah memiliki luas tanah 200 m2. luas bangunan 400 m2 dengan status tanah Girik. Mesjid Al-Hidayah memiliki jumlah jamaah 200 orang, jumlah muazin 6 orang.
-                      Jumlah remaja 30 orang dan jumlah Khotib 6 orang.</p>
+                    <div class="deskripsi un">
+                      <p>
+                        Mesjid Akbar Al-Hidayah yang dibangun pada tahun 2012. Beralamat di RT. 05/04 KEL Curug Depok Jawa Barat.
+                      Mesjid yang satu ini memiliki luas tanah 200 m2, luas bangunan 400 m2 dengan status tanah Girik. Mesjid Akbar Al-Hidayah juga dapat menampung jumlah jamaah hingga 200 orang, jumlah muazin 6 orang.
+                      jumlah remaja 30 orang hingga jumlah Khotib 6 orang.
+                      <br>
+                      Masjid dengan 2 lantai yang nyaman, bersih, luas. Berlokasi di pinggir jalan namun tidak
+                      menjadikannya bising suara kendaraan. Parkiran yang luas, baik motor maupun mobil. Tersedia juga tempat charger agar
+                      jamaah bisa mengisi daya perangkatnya saat beribadah. Lahan parkir dijaga satpam 24/7 menjadikan sholat Isya
+                      disini pun akan terasa tenang dan khusyuk.
+                    </p>
                       <a href="#">detail</a>
                     </div>
                   </div>
@@ -105,7 +118,7 @@
                   </p>
                 </div>
               </div>
-              <a href="berita-example.html" class="stretched-link"></a>
+              <a href="#mesjid-example" class="stretched-link"></a>
             </div>
 
             <div class="card mesjid">
@@ -125,7 +138,7 @@
                   </p>
                 </div>
               </div>
-              <a href="berita-example.html" class="stretched-link"></a>
+              <a href="#mesjid-example" class="stretched-link"></a>
             </div>
 
 
@@ -144,7 +157,7 @@
                   </p>
                 </div>
               </div>
-              <a href="berita-example.html" class="stretched-link"></a>
+              <a href="#mesjid-example" class="stretched-link"></a>
             </div>
             </a>
 
@@ -163,7 +176,7 @@
                   </p>
                 </div>
               </div>
-              <a href="berita-example.html" class="stretched-link"></a>
+              <a href="#mesjid-example" class="stretched-link"></a>
             </div>
             </a>
           </div>
