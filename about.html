@@ -17,7 +17,7 @@
   <link href="admin/dist/css/adminlte.min.css" rel="stylesheet">
 
   <link rel="stylesheet" href="css/style.css">
-  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">  <script src="js/darkmode.js"></script>
 </head>
 
 <body>
@@ -39,11 +39,12 @@
           <li class="nav-item"><a class="nav-link" href="data-mesjid/">Data Mesjid</a></li>
           <li class="nav-item"><a class="nav-link" href="register.html">Registrasi</a></li>
           <li class="nav-item"><a class="nav-link active" aria-current="page" href="about.html">Tentang Kami</a></li>
-          <li class="nav-item"><a class="nav-link btn-primary" href="login.html">Login</a></li>
+          <li class="nav-item"><a class="nav-link btn-primary login" href="login.html">Login</a></li>
         </ul>
       </div>
     </div>
   </nav>
+  <button id="dark-mode-toggle" class="dark-mode-toggle"></button>
   <!-- Header-->
   <header class="bg-dark py-5 hero">
     <div class="container px-5">
@@ -55,8 +56,8 @@
               ibadah
               yang berkualitas bagi seluruh jamaah yang datang</p>
             <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
-              <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#features">Get Started</a>
-              <a class="btn btn-outline-light btn-lg px-4" href="#!">Learn More</a>
+              <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#features">Kenapa Cendikia?</a>
+              <a class="btn btn-outline-light btn-lg px-4" href="#team">Tim Kami</a>
             </div>
           </div>
         </div>
@@ -69,8 +70,8 @@
       <div class="row gx-5">
         <div class="col-lg-4 mb-5 mb-lg-0">
           <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-collection"></i></div>
-          <h2 class="h4 fw-bolder">Jadwal Sholat</h2>
-          <p>Berisi mengenai informasi jadwal sholat paling update sesuai dengan data masjid yang ada.</p>
+          <h2 class="h4 fw-bolder">Akurat</h2>
+          <p>Kami berusaha menyajikan berita seakurat mungkin dan semua terverifikasi oleh narasumber terpercaya</p>
           <a class="text-decoration-none" href="#!">
             Call to action
             <i class="bi bi-arrow-right"></i>
@@ -78,11 +79,10 @@
         </div>
         <div class="col-lg-4 mb-5 mb-lg-0">
           <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-building"></i></div>
-          <h2 class="h4 fw-bolder">Kajian Islam</h2>
-          <p>Kajian islam yang sering diadakan di masjid ini memiliki beberapa topik yang sering di bahas, tentunya itu
-            sangat
-            bermanfaat sekali bagi kita untuk belajar tentang agama. Kajian ini sering diadakan setiap hari Senin,
-            Selasa dan Kamis.</p>
+          <h2 class="h4 fw-bolder">Terbaru</h2>
+          <p>
+            Berita kami selalu update setiap harinya, agar anda tidak ketinggalan berita terkait acara mesjid mendatang.
+          </p>
           <a class="text-decoration-none" href="#!">
             Call to action
             <i class="bi bi-arrow-right"></i>
@@ -90,60 +90,14 @@
         </div>
         <div class="col-lg-4">
           <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-toggles2"></i></div>
-          <h2 class="h4 fw-bolder">Featured title</h2>
-          <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and
-            probably just keep going until we run out of words.</p>
+          <h2 class="h4 fw-bolder">Fitur Terlengkap</h2>
+          <p>
+
+          </p>
           <a class="text-decoration-none" href="#!">
             Call to action
             <i class="bi bi-arrow-right"></i>
           </a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- TEAM section-->
-  <section class="py-5 border-bottom" id="team">
-    <div class="container px-5 my-5">
-      <div class="text-center mb-5">
-        <h2 class="title fw-bolder">Meet Out Team</h2>
-        <p class="subtitle lead mb-0">We make this website with <img src="admin/img/loveCoffee.png" width="20px" alt="">
-        </p>
-      </div>
-      <div class="row gx-5 justify-content-center">
-        <!-- Rija-->
-        <div class="col-lg-6 col-xl-3">
-          <div class="card mb-5 mb-xl-0">
-            <div class="card-body">
-              <img src="img/Warga jaga kebersihan masjid.jpg" alt="" class="team-potrait">
-              <div class="card-label">
-                <h2>Ahmad Sahrija</h2>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Melda -->
-        <div class="col-lg-6 col-xl-3">
-          <div class="card mb-5 mb-xl-0">
-            <div class="card-body">
-              <img src="img/Warga jaga kebersihan masjid.jpg" alt="" class="team-potrait">
-            </div>
-          </div>
-        </div>
-        <!-- Ijal -->
-        <div class="col-lg-6 col-xl-3">
-          <div class="card">
-            <div class="card-body">
-              <img src="img/Warga jaga kebersihan masjid.jpg" alt="" class="team-potrait">
-            </div>
-          </div>
-        </div>
-        <!-- Ghofar -->
-        <div class="col-lg-6 col-xl-3">
-          <div class="card">
-            <div class="card-body">
-              <img src="img/Warga jaga kebersihan masjid.jpg" alt="" class="team-potrait">
-            </div>
-          </div>
         </div>
       </div>
     </div>
@@ -187,6 +141,66 @@
       </div>
     </div>
   </section>
+  <!-- TEAM section-->
+  <section class="py-5 border-bottom" id="team">
+    <div class="container px-5 my-5">
+      <div class="text-center mb-5">
+        <h2 class="title fw-bolder">Meet Our Team</h2>
+        <p class="subtitle lead mb-0">We make this website with <img src="admin/img/loveCoffee.png" width="20px" alt="">
+        </p>
+      </div>
+      <div class="row gx-5 justify-content-center">
+        <!-- Rija-->
+        <div class="col-lg-6 col-xl-3">
+          <div class="card mb-5 mb-xl-0">
+            <div class="card-body">
+              <img src="team-galery/ahmad-sahrija.jpg" alt="" class="team-potrait">
+              <div class="card-label">
+                <h4 class="role">Web designer</h4>
+                <h3 class="name">Ahmad Sahrija</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Melda -->
+        <div class="col-lg-6 col-xl-3">
+          <div class="card mb-5 mb-xl-0">
+            <div class="card-body">
+              <img src="team-galery/imelda-wahyuni.jpg" alt="" class="team-potrait">
+              <div class="card-label">
+                <h4 class="role">....</h4>
+                <h3 class="name">Imelda Wahyuni</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Ijal -->
+        <div class="col-lg-6 col-xl-3">
+          <div class="card">
+            <div class="card-body">
+              <img src="team-galery/faizal-fandi.jpg" alt="" class="team-potrait">
+              <div class="card-label">
+                <h4 class="role">....</h4>
+                <h3 class="name">Faizal Fandi</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Ghofar -->
+        <div class="col-lg-6 col-xl-3">
+          <div class="card">
+            <div class="card-body">
+              <img src="team-galery/ma-abdul-ghofar.jpg" alt="" class="team-potrait">
+              <div class="card-label">
+                <h4 class="role">....</h4>
+                <h3 class="name">Ma Abdul Ghofar</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- Contact section-->
   <section class="py-5">
     <div class="container px-5 my-5 px-5">
@@ -209,29 +223,29 @@
             <div class="form-floating mb-3">
               <input class="form-control" id="name" type="text" placeholder="Enter your name..."
                 data-sb-validations="required" />
-              <label for="name">Full name</label>
+              <label for="name">Nama lengkap</label>
               <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
             </div>
-            <!-- Email address input-->
+            <!-- Alamat e-mail input-->
             <div class="form-floating mb-3">
               <input class="form-control" id="email" type="email" placeholder="name@example.com"
                 data-sb-validations="required,email" />
-              <label for="email">Email address</label>
+              <label for="email">Alamat e-mail</label>
               <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
               <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
             </div>
-            <!-- Phone number input-->
+            <!-- Nomor telepon input-->
             <div class="form-floating mb-3">
               <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890"
                 data-sb-validations="required" />
-              <label for="phone">Phone number</label>
+              <label for="phone">Nomor telepon</label>
               <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
             </div>
             <!-- Message input-->
             <div class="form-floating mb-3">
               <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..."
                 style="height: 10rem" data-sb-validations="required"></textarea>
-              <label for="message">Message</label>
+              <label for="message">Pesan</label>
               <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
             </div>
             <!-- Submit success message-->

@@ -21,7 +21,7 @@
   <!-- custom stylesheet -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="shortcut icon" href=".ico" type="image/x-icon">
-  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">  <script src="js/darkmode.js"></script>
 </head>
 
 <body class="hold-transition register-page">
@@ -35,9 +35,9 @@
       <div class="card-body register-card-body">
         <p class="login-box-msg">Silakan isi registrasi di bawah ini</p>
 
-        <form onsubmit="return regist(this);" method="post">
+        <form onsubmit="regist()">
           <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Nama Lengkap" id="name">
+            <input type="text" class="form-control" placeholder="Nama Lengkap" id="name" required>
             <div class="input-group-append">
               <div class="input-group-text">
                 <span class="fas fa-user"></span>
@@ -45,7 +45,7 @@
             </div>
           </div>
           <div class="input-group mb-3">
-            <input type="email" class="form-control" placeholder="Email" id="email">
+            <input type="email" class="form-control" placeholder="Email" id="email" required>
             <div class="input-group-append">
               <div class="input-group-text">
                 <span class="fas fa-envelope"></span>
@@ -53,7 +53,7 @@
             </div>
           </div>
           <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Username" id="username">
+            <input type="text" class="form-control" placeholder="Username" id="username" required>
             <div class="input-group-append">
               <div class="input-group-text">
                 <span class="fas fa-user"></span>
@@ -61,17 +61,17 @@
             </div>
           </div>
           <div class="input-group mb-3">
-            <input type="password" class="form-control" placeholder="Password" id="password">
+            <input type="password" class="form-control" placeholder="Password" id="password" required>
             <div class="input-group-append">
-              <div class="input-group-text" onclick="toggleVisiblePassword(document.getElementById('password'))">
+              <div class="input-group-text toggle" onclick="toggleVisiblePassword(document.getElementById('password'))">
                 <span class="fas fa-lock"></span>
               </div>
             </div>
           </div>
           <div class="input-group mb-3">
-            <input type="password" class="form-control" placeholder="Cek password" id="check-password">
+            <input type="password" class="form-control" placeholder="Cek password" id="check-password" required>
             <div class="input-group-append">
-              <div class="input-group-text" onclick="toggleVisiblePassword(document.getElementById('check-password'))">
+              <div class="input-group-text toggle" onclick="toggleVisiblePassword(document.getElementById('check-password'))">
                 <span class="fas fa-lock"></span>
               </div>
             </div>
@@ -82,7 +82,7 @@
           <div class="row">
             <div class="col-8">
               <div class="icheck-primary">
-                <input type="checkbox" id="agreeTerms" name="terms" value="agree">
+                <input type="checkbox" id="agreeTerms" name="terms" value="agree" required>
                 <label for="agreeTerms">
                   Saya setuju <a href="#"></a>
                 </label>

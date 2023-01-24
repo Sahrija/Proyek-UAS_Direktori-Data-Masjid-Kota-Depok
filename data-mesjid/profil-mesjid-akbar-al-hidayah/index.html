@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta name="description" content="" />
   <meta name="author" content="" />
-  <title>Mesjid Akbar | Cendikia</title>
+  <title>Mesjid Akbar Al-Hidayah | Cendikia</title>
   <!-- Favicon-->
   <link rel="icon" type="image/x-icon" href="../../assets/favicon.ico" />
   <!-- Bootstrap icons-->
@@ -17,8 +17,9 @@
   <link href="../../admin/dist/css/adminlte.min.css" rel="stylesheet">
 
   <link rel="stylesheet" href="../../css/style.css">
-  <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="../../img/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
+  <script src="../../js/darkmode.js"></script>
 </head>
 
 <body>
@@ -40,28 +41,29 @@
           <li class="nav-item"><a class="nav-link active" aria-current="page" href="../#">Data Mesjid</a></li>
           <li class="nav-item"><a class="nav-link" href="../../register.html">Registrasi</a></li>
           <li class="nav-item"><a class="nav-link" href="../../about.html">Tentang Kami</a></li>
-          <li id="account" class="nav-item"><a class="nav-link btn-primary" href="../../login.html">Login</a>
+          <li id="account" class="nav-item"><a class="nav-link btn-primary login" href="../../login.html">Login</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
+  <button id="dark-mode-toggle" class="dark-mode-toggle"></button>
 
 
   <section class="py-5" id="data-mesjid">
     <div class="my-5">
 
 
-      <div class="breadcrumb">
-        <a href="" class="breadcrumb-item">Lorem, ipsum.</a>
-        <a href="" class="breadcrumb-item">Iusto, quos.</a>
-        <a href="" class="breadcrumb-item">Quisquam, id.</a>
-      </div>
+      <ul class="breadcrumb">
+        <li class="breadcrumb-item"><a href="../../home.html">Home</a></li>
+        <li class="breadcrumb-item"><a href="../index.html">Data Mesjid</a></li>
+        <li class="breadcrumb-item ">Mesjid Akbar Al-Hidayah</li>
+      </ul>
 
 
       <div class="">
         <div class="mb-5 title-container">
-          <h2 class="title fw-bolder">Profil Mesjid Akbar</h2>
+          <h2 class="title fw-bolder">Profil Mesjid Akbar Al-Hidayah</h2>
           <p class="subtitle lead mb-0">Galeri</p>
         </div>
 
@@ -69,15 +71,12 @@
         <div class="gx-5 container galeries">
 
           <ul class="galery" id="galery">
-            <li><img src="img/foto1-mesjid-agung.jpg" alt=""></li>
-            <li><img src="img/foto1-mesjid-agung.jpg" alt=""></li>
-            <li><img src="img/foto1-mesjid-agung.jpg" alt=""></li>
-            <li><img src="img/foto1-mesjid-agung.jpg" alt=""></li>
-            <li><img src="img/foto1-mesjid-agung.jpg" alt=""></li>
+            <li><img src="img/foto1-mesjid-agung.jpg" alt="galeri foto"></li>
+            <li><img src="img/foto2-mesjid-agung.jpg" alt="galeri foto"></li>
+            <li><img src="img/foto3-mesjid-agung.jpg" alt="galeri foto"></li>
+            <li><img src="img/foto4-mesjid-agung.jpg" alt="galeri foto"></li>
+            <li><img src="img/foto5-mesjid-agung.jpg" alt="galeri foto"></li>
           </ul>
-
-
-
 
         </div>
 
@@ -92,7 +91,7 @@
 
 
   <div class="mb-5 title-container">
-    <p class="subtitle lead mb-0">Daskripsi Fasilitas & Alamat</p>
+    <p class="subtitle lead mb-0">Deskripsi Fasilitas & Alamat</p>
   </div>
   <!-- deskripsi & alamat -->
   <section class="detail container">
@@ -102,20 +101,54 @@
         <h2>Deskripsi Fasilitas</h2>
       </div>
       <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium at, fuga adipisci optio nam voluptatem et
-        maxime quisquam dolorum eum nihil maiores voluptas ipsum ducimus necessitatibus tempora temporibus accusamus.
-        Commodi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quidem vel aspernatur deserunt iste modi,
-        autem beatae animi accusamus laboriosam praesentium tempora? Corrupti quae architecto porro similique beatae,
-        quisquam esse.
+        Masjid dengan 2 lantai yang nyaman. Bersih. Luas. Berlokasi di pinggir jalan namun tidak menjadikannya bising
+        suara kendaraan. Parkiran yang luas, baik motor maupun mobil. Tersedia juga tempat charger agar jamaah bisa
+        mengisi daya perangkatnya saat beribadah. Lahan parkir dijaga satpam 24/7 menjadikan sholat Isya disini pun akan
+        terasa tenang dan khusyuk.
+
       </p>
     </div>
 
     <div class="alamat card">
       <div class="card-header">
         <h2>Alamat & Peta Lokasi</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo eius optio deserunt. Repudiandae aliquam quas
-          perferendis, accusantium quae, ipsum laboriosam aperiam, repellendus veniam odio quidem. Consequuntur soluta
-          officia accusamus quos asperiores, repellat et, magni nostrum, dicta ex qui reprehenderit quaerat.</p>
+      </div>
+      <div class="card-body">
+        <p class="deskripsi-alamat">
+          HQRR+753, Jl. Raya Keadilan, Rangkapan Jaya Baru, Kec. Pancoran Mas, Kota Depok,
+          Jawa Barat 16434, Indonesia.
+          <br>
+          <b>Latidute</b>: -6.409364329789056
+          <b>Longtidute</b>: 106.79042082458916
+        </p>
+
+        <!-- embed map -->
+        <div class="mapouter map-canvas">
+          <div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no"
+              marginheight="0" marginwidth="0"
+              src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Masjid Akbar Al - Hidayah&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
+              href="https://pdflist.com/" alt="pdf">Pdf</a></div>
+          <style>
+            .mapouter {
+              position: relative;
+              text-align: right;
+              width: 100%;
+              max-height: 400px;
+            }
+
+            .gmap_canvas {
+              overflow: hidden;
+              background: none !important;
+              width: 100%;
+              max-height: 400px;
+            }
+
+            .gmap_iframe {
+              max-height: 400px !important;
+            }
+          </style>
+        </div>
+        <!-- embed map end  -->
       </div>
     </div>
 
@@ -123,17 +156,21 @@
 
   <!-- Testimonials section-->
   <section class="py-5 border-bottom">
+    <div class="title-container">
+      <h2 class="title fw-bolder"></h2>
+      <p class="subtitle lead mb-0">Ulasan</p>
+    </div>
     <div class="container px-5 my-5 px-5">
       <div class="mb-5 title-container">
-        <h2 class="title fw-bolder">Profil Mesjid Akbar</h2>
-        <p class="subtitle lead mb-0">Galeri</p>
       </div>
       <div class="ulasan-container">
         <!-- Testimonial 1-->
         <div class="card">
           <div class="card-body p-4">
             <div class="d-flex">
-              <div class="flex-shrink-0"><i class="bi bi-chat-right-quote-fill text-primary fs-1"></i></div>
+              <div class="flex-shrink-0">
+                <img src="img/user1.png" alt="" class="profile-photo">
+              </div>
               <div class="ms-4">
                 <p class="mb-1">Thank you for putting together such a great product. We loved working with you and the
                   whole team, and we will be recommending you to others!</p>
@@ -146,7 +183,9 @@
         <div class="card">
           <div class="card-body p-4">
             <div class="d-flex">
-              <div class="flex-shrink-0"><i class="bi bi-chat-right-quote-fill text-primary fs-1"></i></div>
+              <div class="flex-shrink-0">
+                <img src="img/user2.png" alt="" class="profile-photo">
+              </div>
               <div class="ms-4">
                 <p class="mb-1">The whole team was a huge help with putting things together for our company and brand.
                   We will be hiring them again in the near future for additional work!</p>
@@ -159,7 +198,9 @@
         <div class="card">
           <div class="card-body p-4">
             <div class="d-flex">
-              <div class="flex-shrink-0"><i class="bi bi-chat-right-quote-fill text-primary fs-1"></i></div>
+              <div class="flex-shrink-0">
+                <img src="img/user3.png" alt="" class="profile-photo">
+              </div>
               <div class="ms-4">
                 <p class="mb-1">The whole team was a huge help with putting things together for our company and brand.
                   We will be hiring them again in the near future for additional work!</p>
@@ -176,8 +217,9 @@
     <div class="container px-5 my-5 px-5">
       <div class="text-center mb-5">
         <div class="feature bg-primary text-white rounded-3 mb-3"><i class="bi bi-envelope"></i></div>
-        <h2 class="fw-bolder">Get in touch</h2>
-        <p class="lead mb-0">We'd love to hear from you</p>
+        <h2 class="fw-bolder">Beri Ulasan Mesjid ini</h2>
+        <p class="lead mb-0">Katakan pengalaman yang anda dapatkan dan ketenangan yang anda rasakan saat melaksanakan
+          ibadah di Mesjid Agung</p>
       </div>
       <div class="row gx-5 justify-content-center">
         <div class="col-lg-6">
@@ -186,29 +228,29 @@
             <div class="form-floating mb-3">
               <input class="form-control" id="name" type="text" placeholder="Enter your name..."
                 data-sb-validations="required" />
-              <label for="name">Full name</label>
+              <label for="name">Nama lengkap</label>
               <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
             </div>
-            <!-- Email address input-->
+            <!-- Alamat e-mail input-->
             <div class="form-floating mb-3">
               <input class="form-control" id="email" type="email" placeholder="name@example.com"
                 data-sb-validations="required,email" />
-              <label for="email">Email address</label>
+              <label for="email">Alamat e-mail</label>
               <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
               <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
             </div>
-            <!-- Phone number input-->
+            <!-- Nomor telepon input-->
             <div class="form-floating mb-3">
               <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890"
                 data-sb-validations="required" />
-              <label for="phone">Phone number</label>
+              <label for="phone">Nomor telepon</label>
               <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
             </div>
             <!-- Message input-->
             <div class="form-floating mb-3">
               <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..."
                 style="height: 10rem" data-sb-validations="required"></textarea>
-              <label for="message">Message</label>
+              <label for="message">Pesan</label>
               <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
             </div>
             <!-- Submit success message-->
@@ -255,29 +297,36 @@
   <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
   <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 
-  <!-- Footer-->
-  <footer class="py-5 bg-dark">
-    <div class="container px-5">
-      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2022</p>
-    </div>
-  </footer>
-  <!-- Bootstrap core JS-->
-  <!-- Core theme JS-->
-  <script src="../../bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.min.js"></script>
-  <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-  <!-- * *                               SB Forms JS                               * *-->
-  <!-- * * Activate your form https://startbootstrap.com/solution/contact-forms * *-->
-  <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-  <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-
   <script src="../../js/script.js"></script>
   <script>
-    var item = document.getElementById("galery");
 
-    item.addEventListener("wheel", function (e) {
-      event.preventDefault();
-      if (e.deltaY > 0) item.scrollLeft += 300;
-      else item.scrollLeft -= 300;
+    // slider
+    const slider = document.querySelector('#galery');
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    slider.addEventListener('mousedown', (e) => {
+      isDown = true;
+      slider.classList.add('active');
+      startX = e.pageX - slider.offsetLeft;
+      scrollLeft = slider.scrollLeft;
+    });
+    slider.addEventListener('mouseleave', () => {
+      isDown = false;
+      slider.classList.remove('active');
+    });
+    slider.addEventListener('mouseup', () => {
+      isDown = false;
+      slider.classList.remove('active');
+    });
+    slider.addEventListener('mousemove', (e) => {
+      if (!isDown) return;
+      e.preventDefault();
+      const x = e.pageX - slider.offsetLeft;
+      const walk = (x - startX) * 1; //scroll-fast
+      slider.scrollLeft = scrollLeft - walk;
+      console.log(walk);
     });
   </script>
 </body>

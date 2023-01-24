@@ -18,7 +18,10 @@
 
   <link rel="stylesheet" href="css/style.css">
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <script src="js/darkmode.js"></script>
+  <script src="js/darkmode.js"></script>
 </head>
+
 
 <body>
   <!-- Responsive navbar-->
@@ -39,7 +42,7 @@
           <li class="nav-item"><a class="nav-link" href="data-mesjid/">Data Mesjid</a></li>
           <li class="nav-item"><a class="nav-link" href="register.html">Registrasi</a></li>
           <li class="nav-item"><a class="nav-link" href="about.html">Tentang Kami</a></li>
-          <li class="nav-item"><a class="nav-link btn-primary" href="login.html">Login</a></li>
+          <li class="nav-item" id="login-element"><a class="nav-link btn-primary login" href="login.html">Login</a></li>
         </ul>
       </div>
     </div>
@@ -51,9 +54,9 @@
       <div class="row gx-5 justify-content-center">
         <div class="col-lg-6">
           <div class="text-center my-5">
-            <h1 class="display-5 fw-bolder text-white mb-2">Web Direktory Masjid Terlengkap</h1>
-            <p class="lead subtitle text-white-50 mb-4">Menerapkan pengelolaan data masjid yang modern dan aktivitas ibadah
-              yang berkualitas bagi seluruh jamaah yang datang</p>
+            <h1 class="display-5 fw-bolder text-white mb-2">Cendikia,</h1>
+            <p class="lead subtitle text-white-50 mb-4"> Daftarkan mesjid anda dan dapatkan berita seputar mesjid
+              terbaru dan ter update di Depok</p>
             <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
               <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#features">Get Started</a>
               <a class="btn btn-outline-light btn-lg px-4" href="#!">Learn More</a>
@@ -71,7 +74,7 @@
           <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-collection"></i></div>
           <h2 class="h4 fw-bolder">Jadwal Sholat</h2>
           <p>Berisi mengenai informasi jadwal sholat paling update sesuai dengan data masjid yang ada.</p>
-          <a class="text-decoration-none" href="#!">
+          <a class="text-decoration-none" href="#artikel">
             Call to action
             <i class="bi bi-arrow-right"></i>
           </a>
@@ -79,8 +82,10 @@
         <div class="col-lg-4 mb-5 mb-lg-0">
           <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-building"></i></div>
           <h2 class="h4 fw-bolder">Kajian Islam</h2>
-          <p>Kajian islam yang sering diadakan di masjid ini memiliki beberapa topik yang sering di bahas, tentunya itu sangat
-            bermanfaat sekali bagi kita untuk belajar tentang agama. Kajian ini sering diadakan setiap hari Senin, Selasa dan Kamis.</p>
+          <p>Kajian islam yang sering diadakan di masjid ini memiliki beberapa topik yang sering di bahas, tentunya itu
+            sangat
+            bermanfaat sekali bagi kita untuk belajar tentang agama. Kajian ini sering diadakan setiap hari Senin,
+            Selasa dan Kamis.</p>
           <a class="text-decoration-none" href="#!">
             Call to action
             <i class="bi bi-arrow-right"></i>
@@ -88,9 +93,8 @@
         </div>
         <div class="col-lg-4">
           <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-toggles2"></i></div>
-          <h2 class="h4 fw-bolder">Featured title</h2>
-          <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and
-            probably just keep going until we run out of words.</p>
+          <h2 class="h4 fw-bolder">Berita Terbaru</h2>
+          <p>Jangan lewatkan perkembangan berita perkembangan mesjid Kota Depok</p>
           <a class="text-decoration-none" href="#!">
             Call to action
             <i class="bi bi-arrow-right"></i>
@@ -100,7 +104,7 @@
     </div>
   </section>
   <!-- Pricing section-->
-  <section class="py-5 border-bottom">
+  <section class="py-5 border-bottom" id="artikel">
     <div class="container px-5 my-5">
       <div class="text-center mb-5">
         <h2 class="title fw-bolder">Pay as you grow</h2>
@@ -111,46 +115,36 @@
         <div class="col-lg-6 col-xl-4">
           <div class="card mb-5 mb-xl-0">
             <div class="card-body p-5">
-              <div class="small text-uppercase fw-bold text-muted">Free</div>
-              <div class="mb-3">
-                <span class="display-4 fw-bold">$0</span>
-                <span class="text-muted">/ mo.</span>
-              </div>
-              <ul class="list-unstyled mb-4">
-                <li class="mb-2">
-                  <i class="bi bi-check text-primary"></i>
-                  <strong>1 users</strong>
-                </li>
-                <li class="mb-2">
-                  <i class="bi bi-check text-primary"></i>
-                  5GB storage
-                </li>
-                <li class="mb-2">
-                  <i class="bi bi-check text-primary"></i>
-                  Unlimited public projects
-                </li>
-                <li class="mb-2">
-                  <i class="bi bi-check text-primary"></i>
-                  Community access
-                </li>
-                <li class="mb-2 text-muted">
-                  <i class="bi bi-x"></i>
-                  Unlimited private projects
-                </li>
-                <li class="mb-2 text-muted">
-                  <i class="bi bi-x"></i>
-                  Dedicated support
-                </li>
-                <li class="mb-2 text-muted">
-                  <i class="bi bi-x"></i>
-                  Free linked domain
-                </li>
-                <li class="text-muted">
-                  <i class="bi bi-x"></i>
-                  Monthly status reports
-                </li>
-              </ul>
-              <div class="d-grid"><a class="btn btn-outline-primary" href="#!">Choose plan</a></div>
+              <h2 class="">Jadwal Sholat Hari ini</h2>
+
+              <table class="jadwal-sholat">
+                <tr>
+                  <th>Subuh</th>
+                  <td>04.29</td>
+                </tr>
+                <tr>
+                  <th>Terbit</th>
+                  <td>05.52</td>
+                </tr>
+                <tr>
+                  <th>Zuhur</th>
+                  <td>12.04</td>
+                </tr>
+                <tr>
+                  <th>Asar</th>
+                  <td>15.27</td>
+                </tr>
+                <tr>
+                  <th>Magrib</th>
+                  <td>18.17</td>
+                </tr>
+                <tr>
+                  <th>Isya</th>
+                  <td>19.31</td>
+                </tr>
+              </table>
+
+              <div class="d-grid"><a class="btn btn-outline-primary" href="#!">Lihat Jadwal Untuk Besok</a></div>
             </div>
           </div>
         </div>
@@ -316,25 +310,25 @@
             <div class="form-floating mb-3">
               <input class="form-control" id="name" type="text" placeholder="Enter your name..."
                 data-sb-validations="required" />
-              <label for="name">Full name</label>
+              <label for="name">Nama lengkap</label>
               <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
             </div>
-            <!-- Email address input-->
+            <!-- Alamat e-mail input-->
             <div class="form-floating mb-3">
               <input class="form-control" id="email" type="email" placeholder="name@example.com"
                 data-sb-validations="required,email" />
-              <label for="email">Email address</label>
+              <label for="email">Alamat e-mail</label>
               <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
               <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
             </div>
-            <!-- Phone number input-->
+            <!-- Nomor telepon input-->
             <div class="form-floating mb-3">
               <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890"
                 data-sb-validations="required" />
-              <label for="phone">Phone number</label>
+              <label for="phone">Nomor telepon</label>
               <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
             </div>
-            <!-- Message input-->
+            <!-- Pesan input-->
             <div class="form-floating mb-3">
               <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..."
                 style="height: 10rem" data-sb-validations="required"></textarea>
