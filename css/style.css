@@ -355,13 +355,14 @@ img.profil-mesjid {
 
 #team .card .card-body{position: relative;}
 
-.team-potrait{width: 100%;filter: saturate(10%);height: 300px;}
+.team-potrait{width: 100%;filter: saturate(10%);height: 300px;filter: grayscale(100%);}
+.team-potrait.sahrija{object-position: top;}
 
 .card-label{position: absolute;bottom: 20px;font-family: "ABeeZee", sans-serif;}
 .card-label .name{color:  var(--item-dark);font-size: x-large;position: relative;z-index: 0;}
 .card-label .role{color:  var(--primary-dark);font-size: larger;position: relative;z-index: 1;border-bottom: var(--item-dark) solid;}
 
-.card-label .name::before{
+.card-label .name::before, .role::before{
     content: "";
     position: absolute;
     bottom: 0;right: 10px;
@@ -369,6 +370,9 @@ img.profil-mesjid {
     height: 80%;
     background-color: var(--primary);
     z-index: -1;
+}
+.role::before{
+    width: 90%;left: -20px;
 }
 .card-label .name::after{
     content: "";
@@ -416,11 +420,6 @@ img.profil-mesjid {
 
 .dark-mode a{color: cornflowerblue;}
 .dark-mode .breadcrumb{background-color: #393E46;}
-
-
-.dark-mode h3 {
-    color: red !important;
-}
 
 .dark-mode section.bg-light {
     background-color: white;
