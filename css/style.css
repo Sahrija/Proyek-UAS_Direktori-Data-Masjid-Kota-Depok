@@ -352,6 +352,7 @@ img.profil-mesjid {
 
 
 /* TEAM */
+img.coffee-icon{image-rendering: pixelated;}
 
 #team .card .card-body{position: relative;}
 
